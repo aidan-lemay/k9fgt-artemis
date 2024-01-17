@@ -1,6 +1,12 @@
 # Web Interface Update
 
---
+### Run Locally:
+* Download latest FCC dump, unzip to project root level
+* Install all dependencies in the /web/ folder
+* Run `npm run build` in the web folder
+* Run `sqlite3 fcc.db < migrations/01-create-db.sql` from the root folder
+* Run `cargo run --release --bin update-db && cargo run --release --bin api` from the root folder
+
 # Artemis
 
 The FCC publishes weekly full dumps and daily updates to their license database. The format is awful and the FCC search page is so slow. This dumps it into SQL so we can be speedy
